@@ -1,0 +1,164 @@
+:root {
+  --instagram-background-light: #ffffff;
+  --instagram-background-dark: #121212;
+  --instagram-text-light: #000000;
+  --instagram-text-dark: #ffffff;
+  --instagram-button-light: #3897f0;
+  --instagram-button-dark: #586069;
+}
+
+/* Reset default browser styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+.instagram-app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.instagram-app button {
+  background-color: var(--instagram-button-light);
+  color: var(--instagram-text-light);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.instagram-app button:hover {
+  background-color: #357ae8;
+}
+
+.instagram-app.dark-mode {
+  background-color: var(--instagram-background-dark);
+  color: var(--instagram-text-dark);
+}
+
+.instagram-app.dark-mode button {
+  background-color: var(--instagram-button-dark);
+}
+
+.instagram-app.dark-mode a {
+  background: var(--instagram-background-dark);
+  color: var(--instagram-background-light);
+}
+
+.instagram-app.light-mode {
+  background-color: var(--instagram-background-light);
+  color: var(--instagram-background-dark);
+}
+
+.instagram-app.light-mode a {
+  color: var(--instagram-background-dark);
+}
+
+.instagram-app.light-mode button {
+  background-color: var(--instagram-button-light);
+  color: var(--instagram-background-dark);
+}
+
+.main-content {
+  margin-top: 10px;
+  /* position: relative; */
+  display: flex;
+}
+
+.bg {
+  background: var(--instagram-background-dark);
+  color: var(--instagram-background-light);
+  min-height: 100vh;
+  /* border-radius: 15px; */
+}
