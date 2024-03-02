@@ -100,7 +100,6 @@ video {
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #fafafa;
 }
 
 .instagram-app {
@@ -109,8 +108,8 @@ body {
 }
 
 .instagram-app button {
-  background-color: var(--instagram-button-light);
-  color: var(--instagram-text-light);
+  /* background-color: var(--instagram-button-light); */
+  /* color: var(--instagram-text-light); */
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -151,14 +150,45 @@ body {
 }
 
 .main-content {
+  width: 100%;
+  height: 75vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin-top: 10px;
   /* position: relative; */
+  /* border: 1px solid yellow; */
   display: flex;
+  flex-direction: column;
+  /* background:#000000; */
+}
+
+.content {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  /* background: #000000; */
 }
 
 .bg {
-  background: var(--instagram-background-dark);
+  /* background: var(--instagram--dark); */
   color: var(--instagram-background-light);
   min-height: 100vh;
   /* border-radius: 15px; */
+}
+
+.hidden {
+  display: none;
+}
+
+.instagram-app.dark-mode .content aside,
+.instagram-app.dark-mode .content aside * {
+  padding: 1px 0;
+  background-color: var(--instagram-background-dark);
+  color: var(--instagram-background-light);
+}
+
+.instagram-app.light-mode .content,
+.instagram-app.light-mode .content * {
+  background-color: var(--instagram-background-light);
+  color: var(--instagram-background-dark);
 }

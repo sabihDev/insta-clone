@@ -14,9 +14,8 @@ const Home = () => {
   return (
     <div className={`instagram-app ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <div className="main-content">
         <Sidebar />
-        aaaaaaaaa
+      <div className="main-content hidden">
         
         {/* Your main content goes here */}
       </div>

@@ -4,7 +4,7 @@ import styles from '@/app/ui/Signup/signup.module.css'
 const Signup = () => {
     return (
         <div className="bg">
-            <form className={styles.form} action="">
+            <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
                 <h1 className={styles.h1}>Signup</h1>
 
                 {/* <label className={styles.label} htmlFor="username">Username</label> */}
