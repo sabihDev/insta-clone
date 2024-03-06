@@ -1,8 +1,8 @@
 /* Sidebar.module.css */
 .sidebar {
   max-width: 250px;
-  /* min-height: 100vh; */
-  /* border-right: 1px solid #ddd; */
+  padding-top: 30px;
+  border-right: 1px solid #dbdbdb;
 }
 
 .sidebarContent {
@@ -17,6 +17,7 @@
 
 .sidebarNav li {
   margin-bottom: 20px;
+  padding: 5px 0;
 }
 
 .sidebarNav a {
@@ -24,15 +25,23 @@
   color: #000;
   font-size: 1.4rem;
   display: flex;
+  /* gap: 10px; */
   align-items: center;
 }
 
 .sidebarNav a span {
-  margin-right: 20px;
+  font-size: 1rem;
+  margin-right: 50px;
+}
+
+.sidebarNav li.active {
+  font: 0.65em "Lato", sans-serif;
+  font-weight: bold;
 }
 
 .sidebarNav a svg {
-  margin-right: 40px;
+  margin-right: 15px;
+  font-size: 1.8rem;
 }
 
 .sidebarNav a:hover {
@@ -60,16 +69,26 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
   .sidebar {
-    width: 100vw;
     position: fixed;
+    /* margin-top: 10px; */
+    /* width: 70vw; */
     bottom: 0;
     left: 0;
-    /* height: 10vh; */
-    /* overflow: hidden; */
-    /* border: 1px solid brown; */
     padding: 0;
+    /* margin-inline: auto; */
+    transform: translateY(18px) translateX(-15px);
+    z-index: 100;
+  }
+
+  .sidebarNav a svg{
+    font-size: 1.5rem;
+  }
+
+  .search {
+    opacity: 0;
+    display: none;
   }
 
   .sidebarNav {

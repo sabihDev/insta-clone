@@ -5,10 +5,10 @@ const Login = () => {
         <div className="bg">
             <form className={styles.form} action="">
                 <h1 className={styles.h1}>Login</h1>
-                {/* <label className={styles.label} htmlFor="email">Email</label> */}
+                {/* <label className={styles.label} htmlhtmlFor="email">Email</label> */}
                 <input className={styles.input} type="email" id="email" placeholder='Email' />
 
-                {/* <label className={styles.label} htmlFor="password">Password</label> */}
+                {/* <label className={styles.label} htmlhtmlFor="password">Password</label> */}
                 <input className={styles.input} type="password" id="password" placeholder='Password' />
 
                 <button className={styles.submit} type="submit">Login</button>

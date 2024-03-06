@@ -1,8 +1,10 @@
 'use client';
-// pages/index.js
+import styled from 'styled-components';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import Navbar from './components/Navbar/index.jsx';
 import Sidebar from './components/Sidebar/index.jsx';
+// import InstagramPost from './components/Post/index.jsx';
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -16,11 +18,7 @@ const Home = () => {
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Sidebar />
       <div className="main-content hidden">
-        
-        {/* Your main content goes here */}
       </div>
-      
-      {/* Add other content of the page here */}
     </div>
   );
 };

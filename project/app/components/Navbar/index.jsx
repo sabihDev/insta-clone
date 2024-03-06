@@ -1,7 +1,7 @@
 // Navbar.js
 import React from 'react';
 import Link from 'next/link';
-import  styles from '@/app/ui/Navbar/Navbar.module.css';
+import styles from '@/app/ui/Navbar/Navbar.module.css';
 
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
     return (
@@ -13,10 +13,12 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
                     </Link>
                 </div>
                 <div className={styles.menu}>
-                    <button onClick={toggleDarkMode}>
-                        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-                    </button>
-                    {/* Add other menu items here */}
+                    <div className="form-check form-switch">
+                        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                            onClick={toggleDarkMode} />
+                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark mode</label>
+                    </div>
+
                 </div>
             </div>
         </nav>

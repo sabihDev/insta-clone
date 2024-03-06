@@ -7,12 +7,12 @@ const Signup = () => {
             <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
                 <h1 className={styles.h1}>Signup</h1>
 
-                {/* <label className={styles.label} htmlFor="username">Username</label> */}
+                {/* <label className={styles.label} htmlhtmlFor="username">Username</label> */}
                 <input className={styles.input} type="text" id="username" placeholder='Username' />
-                {/* <label className={styles.label} htmlFor="email">Email</label> */}
+                {/* <label className={styles.label} htmlhtmlFor="email">Email</label> */}
                 <input className={styles.input} type="email" id="email" placeholder='Email' />
 
-                {/* <label className={styles.label} htmlFor="password">Password</label> */}
+                {/* <label className={styles.label} htmlhtmlFor="password">Password</label> */}
                 <input className={styles.input} type="password" id="password" placeholder='Password' />
 
                 <button className={styles.submit} type="submit">Signup</button>

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { IoSearch } from "react-icons/io5";
 import { MdOutlineAddBox } from "react-icons/md";
 import { BiSolidMoviePlay } from "react-icons/bi";
+import styled from 'styled-components';
+
 import {
   RiHome2Line,
   RiMessengerLine,
@@ -11,25 +13,25 @@ import {
   RiUserLine,
 } from "react-icons/ri";
 import styles from "@/app/ui/Sidebar/Sidebar.module.css";
+import InstagramPost from "../Post/index.jsx";
 
 const Sidebar = ({ isDarkMode }) => {
   return (
     <>
       <div className="content">
         <aside
-          className={`${styles.sidebar} ${
-            isDarkMode ? "dark-mode" : "light-mode"
-          }`}
+          className={`${styles.sidebar} ${isDarkMode ? "dark-mode" : "light-mode"
+            }`}
         >
           <div className={styles.sidebarContent}>
             <ul className={styles.sidebarNav}>
-              <li>
+              <li className={` ${styles.active}`}>
                 <Link href="/">
                   <RiHome2Line />
                   <span>Home</span>
                 </Link>
               </li>
-              <li>
+              <li className={` ${styles.search}`}>
                 <Link href="/">
                   <IoSearch />
                   <span>Search</span>
@@ -76,11 +78,17 @@ const Sidebar = ({ isDarkMode }) => {
           </div>
         </aside>
         <div className="main-content">
-          aaaaaaaaa
-          <img src="https://picsum.photos/200" alt="" />
-          <img src="https://picsum.photos/200" alt="" />
-          <img src="https://picsum.photos/200" alt="" />
+          {/* aaaaaaaaa
+          <img src="https://picsum.photos/400" alt="" />
+          <img src="https://picsum.photos/400" alt="" />
+          <img src="https://picsum.photos/400" alt="" /> */}
           {/* Your main content goes here */}
+          <InstagramPost />
+          <InstagramPost />
+          <InstagramPost />
+          <InstagramPost />
+          <InstagramPost />
+
         </div>
       </div>
     </>
