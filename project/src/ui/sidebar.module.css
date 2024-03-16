@@ -1,0 +1,129 @@
+.sidebar {
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  border-right: 3px solid var(--instagram-grey);
+}
+
+.sidebar h1 {
+  margin-block: 2rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  font-size: 2rem;
+  /* margin: 0; */
+  padding-left: 20px;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 2rem;
+  padding-top: 10px;
+  cursor: pointer;
+  /* gap: 2rem; */
+}
+
+.sidebar ul li a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar ul li span {
+  font-size: 3rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background: yellow;
+}
+
+ul.dropdownContent {
+  font-size: 1.5rem;
+  width: 14%;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  background: var(--instagram-grey);
+  box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.25);
+  top: 38%;
+  left: 20px;
+  border-radius: 20px;
+}
+
+.flexBetween {
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 2rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.row span,
+.dropdownContent span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.row span {
+  transform: translateY(2px);
+}
+
+.dropdownContent span {
+  transform: translateY(2px);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.flex a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.flex span {
+  display: none;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar a {
+    display: none;
+  }
+
+  .flex {
+    margin: 0;
+  }
+
+  .flex span {
+    display: block;
+  }
+
+  .row div{
+    display: none;
+  }
+}

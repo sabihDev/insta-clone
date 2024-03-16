@@ -28,21 +28,28 @@ body {
   width: 100vw;
   display: flex;
   flex-basis: 10% 90%;
-  /* border: 1px solid yellow; */
 }
 
 .flex :nth-child(2) {
   width: 82%;
-  /* border: 1px solid black; */
 }
 
-/* .flex > * {
-  border: 1px solid yellow;
-} */
+.hidden {
+  display: none;
+}
 
-.flex>:nth-child(1) {
+.flex > :nth-child(1) {
   width: 18%;
   height: 100vh;
-  border-right: 1px solid var(--instagram-dark-grey);
-  /* border: 1px solid black; */
+  /* border-right: 1px solid var(--instagram-dark-grey); */
 }
+
+.hr {
+  width: 108%;
+  height: 5px;
+  margin-bottom: 20px;
+  background: rgba(128, 128, 128, 0.148);
+  translate: -7%;
+}
+
+
