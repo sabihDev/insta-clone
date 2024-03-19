@@ -27,7 +27,7 @@ body {
 .flex {
   width: 100vw;
   display: flex;
-  flex-basis: 10% 90%;
+  /* flex-basis: 10% 90%; */
 }
 
 .flex :nth-child(2) {

@@ -1,0 +1,40 @@
+.navbar {
+  margin-block: 1rem;
+  width: 100%;
+  display: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--instagram-dark-grey);
+}
+
+.navbar input {
+  background: var(--instagram-dark-grey);
+  color: var(--instagram-grey);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    /* border: 1px solid red; */
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    gap: 10px;
+  }
+}

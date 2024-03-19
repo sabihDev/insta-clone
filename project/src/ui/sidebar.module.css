@@ -46,7 +46,7 @@
 
 ul.dropdownContent {
   font-size: 1.5rem;
-  width: 14%;
+  min-width: 300px;
   display: flex;
   padding-top: 20px;
   flex-direction: column;
@@ -54,7 +54,7 @@ ul.dropdownContent {
   position: fixed;
   background: var(--instagram-grey);
   box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.25);
-  top: 38%;
+  top: 28%;
   left: 20px;
   border-radius: 20px;
 }
@@ -110,20 +110,40 @@ ul.dropdownContent {
   font-size: 30px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1060px) {
+  .sidebar {
+    max-width: 80px;
+    /* border: 1px solid red; */
+  }
   .sidebar a {
     display: none;
   }
 
+  .sidebar li {
+    width: fit-content;
+  }
+
   .flex {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .flex span {
     display: block;
   }
 
-  .row div{
+  .row div {
+    display: none;
+    border: 1px solid red;
+  }
+  .dropdownContent {
+    /* translate: 0 -100px; */
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
     display: none;
   }
+  
 }

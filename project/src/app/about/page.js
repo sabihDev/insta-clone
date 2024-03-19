@@ -1,7 +1,11 @@
-export default function About(){
+import RootLayout from "@/app/layout.js";
+
+export default function About() {
     return (
-        <div>
-            About
-        </div>
+        <RootLayout showSidebar={false}>
+            <div className="about-container">
+                About
+            </div>
+        </RootLayout>
     )
 }
